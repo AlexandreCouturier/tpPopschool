@@ -50,7 +50,6 @@ nav ul li{
 main{
     display: flex;
     width: 1100px;
-    height: 950px;
     flex-direction: column;
 }
 
@@ -67,7 +66,6 @@ main{
     flex-direction: column;
     align-items: center;
     width: 250px;
-    height: 225px;
     padding: 5px 8px;
     border-radius: 10px;
 }
@@ -117,3 +115,144 @@ main{
     color: rgb(255, 153, 0) ;
     text-decoration: none;
 }
+
+@media screen and (max-width:1023px) {
+    header{
+        align-items: center;
+    }
+
+    nav ul li{
+        font-size: 23px;
+    }
+    
+    .texteArticle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texteArticle h2{
+        font-size: 28px;
+    }
+
+    .texteArticle p{
+        font-size: 22px;
+    }
+
+    .texteArticle img{
+    }
+}
+@media screen and (max-width:767px) {
+
+    #logo{
+        align-self: flex-end;
+        width: 900px;
+    }
+    
+    header nav {
+        content: url(../../images/Hamburger_icon.svg.png);
+        position: absolute;
+        width: 75px;
+        height: 75px;
+        top: 75px;
+        left: 100px;
+    }
+    
+    .articles{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .centrerImage{
+        width: 700px;
+    }
+    
+    .owLogo{
+        width: 650px;
+        height: 400px;
+    }
+    
+    .imagePadding{
+        width: 120px;
+        height: 120px;
+    }
+
+    .elargissement{
+        margin-top: 65px;
+        font-size: 30px;
+    }
+
+    .texteArticle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texteArticle p{
+        font-size: 50px;
+        line-height: 40px;
+    } 
+
+    .texteArticle h2{
+        font-size: 60px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .btn{
+        width: 240px;
+        height: 130px;
+    }
+    }
+
+
+    @media screen and (max-width:400px) {
+
+        header {
+           position: relative;
+        }
+        
+        #logo{
+            align-self: flex-end;
+            width: 900px;
+        }
+        
+        header nav {
+            content: url(../../images/Hamburger_icon.svg.png);
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            top: 75px;
+            left: 100px;
+        }
+        
+        .articles{
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .centrerImage{
+            width: 850px;
+        }
+        
+        .owLogo{
+            width: 750px;
+            height: 400px;
+        }
+        
+        .imagePadding{
+            width: 180px;
+            height: 180px;
+        }
+
+        .elargissement{
+            font-size: 40px;
+            padding-top: 120px;
+            margin: 0px;
+        }
+
+        .btn{
+            width: 300px;
+            height: 160px;
+        }
+        }
